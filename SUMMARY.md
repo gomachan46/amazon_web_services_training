@@ -10,3 +10,4 @@
 * [仮想サーバの強化(EC2応用編)](./chapter03/README.md)
   * [バックアップの作成](./chapter03/backup.md)
   * [スケールアップ](./chapter03/scaleup.md)
+  * [ディスク容量の追加](./chapter03/disksize.md)
