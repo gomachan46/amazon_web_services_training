@@ -3,3 +3,4 @@
 * [バックアップの作成](./backup.md)
 * [スケープアップ](./scaleup.md)
 * [ディスク容量の追加](./disksize.md)
+* [I/Oの高速化](./io_performance.md)
