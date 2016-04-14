@@ -12,3 +12,4 @@
   * [スケールアップ](./chapter03/scaleup.md)
   * [ディスク容量の追加](./chapter03/disksize.md)
   * [I/Oの高速化](./chapter03/io_performance.md)
+  * [セキュリティの向上](./chapter03/security.md)
