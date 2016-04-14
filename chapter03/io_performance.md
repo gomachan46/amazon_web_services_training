@@ -78,5 +78,3 @@ sudo dd if=/dev/xvdf of=/dev/xvdf conv=notrunc bs=1M
 ```
 
 入出力を同じにしてあげる必要がある。
-
-
