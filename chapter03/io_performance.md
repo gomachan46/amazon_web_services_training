@@ -62,3 +62,21 @@ RAIDは `Redundant Arrays of Inexpensive Disks` の略。
 * 25GBを4台用意してRAID 0 100GBとして振る舞う、みたいなイメージ
 
 EBSは内部でハードウェア冗長性を保っているため、RAID 0が一般的に選択される事が多いらしい。
+
+### ボリュームの暖機
+
+#### 新規にアタッチした空のボリュームの暖機
+
+```
+sudo dd if=/dev/zero of=/dev/xvdf bs=1M
+```
+
+#### 使用済のボリュームの暖機
+
+```
+sudo dd if=/dev/xvdf of=/dev/xvdf conv=notrunc bs=1M
+```
+
+入出力を同じにしてあげる必要がある。
+
+
