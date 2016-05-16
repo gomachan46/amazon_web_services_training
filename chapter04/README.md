@@ -1,3 +1,3 @@
-# 仮想サーバの強化(EC2応用編)
+# DNSの設定と公開(Route53)
 
 * [Route 53の概要](./route53_overview.md)
