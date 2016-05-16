@@ -12,3 +12,7 @@
   * [スケールアップ](./chapter03/scaleup.md)
   * [ディスク容量の追加](./chapter03/disksize.md)
   * [I/Oの高速化](./chapter03/io_performance.md)
+  * [セキュリティの向上](./chapter03/security.md)
+  * [管理の効率化](./chapter03/management.md)
+* [DNSの設定と公開(Route53)](./chapter04/README.md)
+  * [Route 53の概要](./chapter04/route53_overview.md)
