@@ -68,3 +68,13 @@ Record SetのRouting Policyを `Weighted` に設定することで実現可能�
 0に設定するとルーティングは行われなくなる。
 
 Webサイトの移転など、徐々にアクセスを移していきたい場合に有効。
+
+### DNSフェイルオーバー
+
+Record SetのRouting Policyを `Fileover` に設定することで実現可能。
+
+Record Set設定時に同じ名前でPrimary、Secondaryの2つのSetを作成すると、通常はPrimaryに指定された転送先にルーティングされる。
+
+Primary側に問題が発生するとSecondaryに指定された転送先にルーティングされるようになる。
+
+問題発生時にSorryコンテンツを配信するだけのサーバーにルーティングを簡単に切り替えたり出来る。
