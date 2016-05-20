@@ -78,3 +78,11 @@ Record Set設定時に同じ名前でPrimary、Secondaryの2つのSetを作成�
 Primary側に問題が発生するとSecondaryに指定された転送先にルーティングされるようになる。
 
 問題発生時にSorryコンテンツを配信するだけのサーバーにルーティングを簡単に切り替えたり出来る。
+
+### Geo Routing
+
+Record SetのRouting Policyを `Geolocation` に設定することで実現可能。
+
+DNS問い合わせが会った場所に応じて転送先を変えることが出来る。
+
+指定した場所がマッチしないケースに備えてデフォルトで設定しておくのが推奨されている
