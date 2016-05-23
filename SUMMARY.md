@@ -16,3 +16,4 @@
   * [管理の効率化](./chapter03/management.md)
 * [DNSの設定と公開(Route53)](./chapter04/README.md)
   * [Route 53の概要](./chapter04/route53_overview.md)
+  * [Route 53の基本操作](./chapter04/how_to_use_route53.md)
