@@ -20,14 +20,16 @@ Domain Nameに取得したドメインを、Commentに管理用のコメント�
 ### サポートされているレコードタイプ
 
 |レコードタイプ|説明|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|---|---|
+|A(Address Record)||
+|AAAA(IPv6 Address Record)||
+|CNAME(Cannonical Name Record)||
+|MX(Mail Exchange Record)||
+|NS(Name Server Record)||
+|PTR(Pointer Record)||
+|SOA(Start Of Authority Record)||
+|SPF(Sender Policy Framework Record)||
+|SRV(SeRVice locator Record)||
+|TXT(Text Record)||
+
+以上10種類。
