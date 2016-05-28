@@ -21,15 +21,15 @@ Domain Nameに取得したドメインを、Commentに管理用のコメント�
 
 |レコードタイプ|説明|
 |---|---|
-|A(Address Record)||
-|AAAA(IPv6 Address Record)||
-|CNAME(Cannonical Name Record)||
-|MX(Mail Exchange Record)||
-|NS(Name Server Record)||
-|PTR(Pointer Record)||
-|SOA(Start Of Authority Record)||
-|SPF(Sender Policy Framework Record)||
-|SRV(SeRVice locator Record)||
-|TXT(Text Record)||
+|A(Address Record)|ホスト名とIPv4のIPアドレスのマッピング|
+|AAAA(IPv6 Address Record)|ホスト名とIPv6のIPアドレスのマッピング|
+|CNAME(Cannonical NAME Record)|他のDNS名の別名を設定|
+|MX(Mail eXchange Record)|メールサーバ名のリストを設定|
+|NS(Name Server Record)|ドメインの移譲されているネームサーバ(権威DNSサーバ)名を設定|
+|PTR(PoinTeR Record)|逆引き(IPアドレスからDNS名へのマッピング)を行う。実際にはIPアドレスを直接していしない。|
+|SOA(Start Of Authority Record)|ゾーンに関する情報を指定。プライマリネームサーバ、ドメイン管理者のEメール、シリアルナンバー、更新間隔、キャッシュの有効期間など。|
+|SPF(Sender Policy Framework Record)|IPアドレスによる電子メールの送信ドメイン認証技術であるSPFに関する記述を行う。|
+|SRV(SeRVice locator Record)|そのドメインで提供されているサービスの詳細な情報を記述|
+|TXT(Text Record)|テキスト情報を提供するためのレコード。Routes 53では255文字を超えるTXTレコードを1レコードとして記述する場合は注意が必要|
 
 以上10種類。
