@@ -40,8 +40,23 @@ Domain Nameに取得したドメインを、Commentに管理用のコメント�
 
 #### マネジメントコンソールでの移行
 
-
 * サービス: Route 53
 * 概要: `Import Zone File`ボタンからゾーンファイルを入力するテキストファイルに貼り付けて`Import`ボタンをクリック
 
 SOAレコードとZone ApexのNSレコードは無視されるのでインポートの時は特に気にしなくてOK
+
+### Record Setの登録(マネジメントコンソール)
+
+一例として、Web Site Hosting設定されているS3のバケットを独自ドメインでアクセス出来るようにRoute 53を用いて設定してみる。
+
+元のURLは `http://gomachan46-sample.s3-website-us-west-2.amazonaws.com/` とする
+
+* サービス: Route 53
+* 概要: `Create Record Set`からCNAMEレコードを作成し、CNAMEはS3のバケットを指定する
+
+Nameには割り当てたいドメイン名(例: sample.gomachan46.xyz)
+ValueにはS3バケットのエンドポイント(例: gomachan46-sample.s3-website-us-west-2.amazonaws.com)
+
+これで保存すれば完了！
+
+※S3のバケットにルートドメインを割り当てる場合、あらかじめDNSサーバーはRoute53にしておく必要がある。
